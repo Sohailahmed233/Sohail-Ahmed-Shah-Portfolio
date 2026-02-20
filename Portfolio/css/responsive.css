@@ -1,0 +1,527 @@
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ============================================ */
+
+/* ============================================
+   EXTRA SMALL DEVICES (320px - 479px)
+   ============================================ */
+
+@media (max-width: 479px) {
+  :root {
+    --font-size-base: 14px;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    gap: 0;
+    padding: var(--spacing-lg);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .profile-img {
+    max-width: 250px;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-info {
+    gap: var(--spacing-md);
+  }
+
+  .info-box {
+    padding: var(--spacing-md);
+  }
+
+  /* Section Spacing */
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
+/* ============================================
+   SMALL DEVICES (480px - 767px)
+   ============================================ */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  :root {
+    --font-size-base: 15px;
+    --spacing-lg: 1.75rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* Navigation */
+  .nav-links {
+    gap: var(--spacing-lg);
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    gap: 0;
+    padding: var(--spacing-lg);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .profile-img {
+    max-width: 300px;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+/* ============================================
+   MEDIUM DEVICES (768px - 1023px)
+   ============================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .profile-img {
+    max-width: 350px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-content {
+    gap: var(--spacing-xl);
+  }
+}
+
+/* ============================================
+   LARGE DEVICES (1024px and up)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    gap: var(--spacing-xl);
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    padding: 0;
+  }
+
+  /* Hero */
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================================
+   EXTRA LARGE DEVICES (1440px and up)
+   ============================================ */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ADJUSTMENTS
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE ADJUSTMENTS
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch target sizes */
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-links a {
+    padding: var(--spacing-sm);
+  }
+
+  /* Remove hover effects that don't work well on touch */
+  .project-overlay {
+    opacity: 1;
+  }
+
+  .project-card:hover .project-overlay {
+    opacity: 1 !important;
+  }
+
+  /* Make interactive elements more finger-friendly */
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* ============================================
+   PRINT MEDIA
+   ============================================ */
+
+@media print {
+  .navbar,
+  .footer,
+  .cta-buttons,
+  .contact-form {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   DARK MODE MEDIA QUERY
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: more) {
+  .btn-primary {
+    border: 3px solid var(--accent-primary);
+  }
+
+  .skill-bar {
+    border: 2px solid var(--accent-primary);
+  }
+
+  .project-card {
+    border: 2px solid var(--accent-primary);
+  }
+}
+
+/* ============================================
+   MOBILE OPTIMIZATIONS
+   ============================================ */
+
+@media (max-width: 767px) {
+  /* Fixed positioning for better UX on mobile */
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  /* Increase padding for mobile */
+  .section-title {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .section-description {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Adjust form for mobile */
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust footer on mobile */
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   RETINA DISPLAYS
+   ============================================ */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .skill-bar {
+    border-width: 0.5px;
+  }
+
+  .border {
+    border-width: 0.5px;
+  }
+}

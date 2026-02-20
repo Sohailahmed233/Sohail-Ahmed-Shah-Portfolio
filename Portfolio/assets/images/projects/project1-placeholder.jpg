@@ -1,0 +1,22 @@
+<svg width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proj1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff" />
+      <stop offset="100%" style="stop-color:#0a8fb9" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="350" height="250" fill="url(#proj1)"/>
+  
+  <!-- Shopping bag icon -->
+  <g transform="translate(175, 100)">
+    <rect x="-40" y="-30" width="80" height="70" rx="5" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <path d="M -30 -30 Q -20 -50 0 -50 Q 20 -50 30 -30" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-15" y1="0" x2="-15" y2="30" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="15" y1="0" x2="15" y2="30" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <text x="175" y="200" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">E-COMMERCE</text>
+  <text x="175" y="225" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" opacity="0.8">Online Shopping Platform</text>
+</svg>

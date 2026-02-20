@@ -1,0 +1,33 @@
+# robots.txt for Sohail's Portfolio
+# This file helps search engines crawl and index the website
+
+# Allow all web crawlers
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: *.pdf
+Disallow: *.zip
+
+# Specific rules for Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://sohail-portfolio.com/sitemap.xml
+Sitemap: https://sohail-portfolio.com/sitemap-images.xml
